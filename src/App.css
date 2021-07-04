@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #222;
+  height: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+i.fa.fa-shopping-basket.fa-6 {
+  font-size: 8em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+section div header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+section div header .category {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 7px 0;
+  padding: 10px;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:nth-child(even) {
+  background: #efefef;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+ul.Groceries li:before {
+  font-family: FontAwesome;
+  content: "\f196 \0000a0";
+  color: rgb(101, 253, 124);
+  font-size: 1.2em;
+  font-weight: bold; 
+}
+
+ul.Groceries li:hover:before {
+  font-family: FontAwesome;
+  content: "\f0fe \0000a0";
+  color: rgb(0, 191, 0);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+ul.Basket li:before {
+  font-family: FontAwesome;
+  content: "\f147 \0000a0";
+  color: rgb(240, 124, 124);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+ul.Basket li:hover:before {
+  font-family: FontAwesome;
+  content: "\f146 \0000a0";
+  color: #f00;
+  font-size: 1.2em;
+  font-weight: bold;
 }
