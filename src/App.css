@@ -1,0 +1,242 @@
+* , *::before, *::after {
+  box-sizing: content-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 186px;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  left: 92%;
+  white-space: nowrap;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.App-header i.fa.fa-film.fa-6, .App-header i.fa.fa-reddit-alien.fa-6 {
+ height: 80px;
+ font-size: 8em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px 0px;
+}
+
+main section {
+  border-radius: 11px;
+  background-color: #f9f9f9;
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+main section.search:hover {
+	color:#4c6ef5;
+}
+		
+main section.search:hover input[type="text"]{
+  color:#4c6ef5;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 5.5px;
+}
+
+main a {
+ color: #333;
+}
+
+main form{
+  width:90%;
+}
+
+main input[type="text"]{
+  width: 100%;
+  border: none;
+  padding: 10px 0px;
+  font-size: 1.5em;
+  background: none;
+  font-weight:bold;
+  margin-top: -2px;
+}
+
+main input[type="text"]:focus{
+  outline:none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+main section:first-child{
+  padding: 10px 0px 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main section.list{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: none;
+}
+
+main section.list img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+main div {
+  width: 300px;
+  margin: 20px;
+  padding: 10px 30px;
+  overflow-x: hidden;
+  border-radius: 11px;
+  background-color: #f6f6f6;
+  border:1px solid #eee;
+}
+
+main div a {
+  text-decoration:none;
+}
+
+main div a:hover{
+  text-decoration:underline;
+}
+
+main div a:not(:last-child) {
+  margin-right: 10px;
+}
+
+main div img {
+  opacity: .75;
+}
+
+main div h2{
+  text-transform: capitalize;
+}
+
+main div:hover {
+  background: #ffb6c11f;
+  border:1px solid deeppink;
+  opacity: 1;
+}
+
+main div:hover a{
+    color:hotpink;
+  }
+main div:hover a:hover, a > *:hover{
+  color: tomato;
+}
+  
+main div:hover img{
+  opacity: 1;
+}
+
+main div:hover h2{
+  color:#4c6ef5;
+}
+
+main div:hover h2 > a{
+  color: #4c6ef5;
+}
+  
+main div:hover p{
+  color: lightpink;
+}
+
+@media (max-width: 600px) {
+  main div:hover {
+    background: tomato;
+  }
+  
+  main div:hover :hover {
+    background: yellow;
+  }
+}
+
+main div p{
+  text-transform: lowercase;
+}
+
+main div p:first-child{
+  margin-bottom:2px;
+}
+
+main div p:nth-child(2){
+  margin-top: 2px;
+  color:red;
+}
+
+main.giphy section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:90%;
+    background: none;
+}
+
+main.giphy section.giphy-history{
+  align-self: flex-start;
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main.giphy section.giphy-history ul{
+  padding: 0;
+  width: 80%;
+  overflow: hidden;
+}
+
+main.giphy section.giphy-history ul li{
+  list-style: none;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+  margin: 5px;
+  border-radius: 6px;
+}
+main.giphy section.giphy-history ul li:hover{
+  color: #4c6ef5;
+  background: #ffc0cb5e;
+}
+
+main.giphy div{
+  width: 20%;
+  background-color: #f6f6f652;
+}
+main.giphy div > * {
+  zoom: 0.5;
+}
